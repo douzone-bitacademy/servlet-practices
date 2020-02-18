@@ -112,7 +112,6 @@ public class EmaillistDao {
 		
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
-			
 			String url = "jdbc:mysql://192.168.1.100:3307/webdb";
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 		} catch (ClassNotFoundException e) {
